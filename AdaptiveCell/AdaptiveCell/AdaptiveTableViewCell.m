@@ -60,31 +60,27 @@
     self.picthreView = pictureView;
 }
 
-// 代码布局
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    self.nameLabel.frame = self.model.nameFrame;
-    self.text_Label.frame = self.model.textFrame;
-    self.picthreView.frame = self.model.pictureFrame;
-    
-//    CGFloat nameX = Space;
-//    CGFloat namey = Space;
+//// 代码布局
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
 //    
-//    // 获取文字宽度
-//    CGSize nameSzie = [self getLabalSizeWithLabel:self.nameLabel];
-//    self.nameLabel.frame = CGRectMake(nameX, namey, nameSzie.width, nameSzie.height);
-//    
-//    // 正文
-//    CGFloat textW = self.contentView.bounds.size.width - Space * 2;
-//    CGFloat textH = [self getLabelSizeWithLabel:self.text_Label width:textW];
-//    self.text_Label.frame = CGRectMake(Space, CGRectGetMaxY(self.nameLabel.frame) + Space, textW, textH);
-//    
-//    // 图片
-//    if (self.model.picture) {
-//        self.picthreView.frame = CGRectMake(Space, CGRectGetMaxY(self.text_Label.frame) + Space, 100, 100);
-//    }
-}
+////    CGFloat nameX = Space;
+////    CGFloat namey = Space;
+////    
+////    // 获取文字宽度
+////    CGSize nameSzie = [self getLabalSizeWithLabel:self.nameLabel];
+////    self.nameLabel.frame = CGRectMake(nameX, namey, nameSzie.width, nameSzie.height);
+////    
+////    // 正文
+////    CGFloat textW = self.contentView.bounds.size.width - Space * 2;
+////    CGFloat textH = [self getLabelSizeWithLabel:self.text_Label width:textW];
+////    self.text_Label.frame = CGRectMake(Space, CGRectGetMaxY(self.nameLabel.frame) + Space, textW, textH);
+////    
+////    // 图片
+////    if (self.model.picture) {
+////        self.picthreView.frame = CGRectMake(Space, CGRectGetMaxY(self.text_Label.frame) + Space, 100, 100);
+////    }
+//}
 
 // 重写属性的setter方法
 - (void)setModel:(AdaptiveModel *)model {
@@ -101,6 +97,11 @@
     } else {
         self.picthreView.hidden = YES;
     }
+    
+    // 设置控件的frame
+    self.nameLabel.frame = self.model.nameFrame;
+    self.text_Label.frame = self.model.textFrame;
+    self.picthreView.frame = self.model.pictureFrame;
 }
 
 

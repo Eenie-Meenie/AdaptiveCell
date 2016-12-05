@@ -33,7 +33,6 @@
         //    CGFloat textH = [self getLabelSizeWithLabel:self.text_Label width:textW];
         self.textFrame = CGRectMake(Space, CGRectGetMaxY(self.nameFrame) + Space, textW, textsize.height);
         
-        
         // 图片
         if (self.picture) {
             self.pictureFrame = CGRectMake(Space, CGRectGetMaxY(self.textFrame) + Space, 100, 100);
