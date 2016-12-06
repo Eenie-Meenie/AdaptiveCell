@@ -91,10 +91,10 @@
     self.nameLabel.text = model.name;
     self.text_Label.text = model.text;
     
-    if (self.picthreView) {
+    if (model.picture) { // 有图片
         self.picthreView.hidden = NO;
         self.picthreView.image = [UIImage imageNamed:model.picture];
-    } else {
+    } else {            // 没有图片
         self.picthreView.hidden = YES;
     }
     
