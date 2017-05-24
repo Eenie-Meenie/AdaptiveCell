@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22F800511ED582510049D1BD /* 3367014-255120f26d887fce.gif in Resources */ = {isa = PBXBuildFile; fileRef = 22F800501ED582510049D1BD /* 3367014-255120f26d887fce.gif */; };
 		A117E7151DF51454006650C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A117E7141DF51454006650C0 /* main.m */; };
 		A117E7181DF51454006650C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A117E7171DF51454006650C0 /* AppDelegate.m */; };
 		A117E7211DF51454006650C0 /* AdaptiveCell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A117E71F1DF51454006650C0 /* AdaptiveCell.xcdatamodeld */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		003573BC383BB7F176CD1289 /* Pods-AdaptiveCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdaptiveCell/Pods-AdaptiveCell.debug.xcconfig"; sourceTree = "<group>"; };
+		22F800501ED582510049D1BD /* 3367014-255120f26d887fce.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "3367014-255120f26d887fce.gif"; sourceTree = "<group>"; };
 		62074AFDD1DB11514EEE0DA3 /* libPods-AdaptiveCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdaptiveCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87766A27F1FA4EB91E6F6C3F /* Pods-AdaptiveCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdaptiveCell/Pods-AdaptiveCell.release.xcconfig"; sourceTree = "<group>"; };
 		A117E7101DF51454006650C0 /* AdaptiveCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,9 +54,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F8004F1ED582510049D1BD /* pictureExample */ = {
+			isa = PBXGroup;
+			children = (
+				22F800501ED582510049D1BD /* 3367014-255120f26d887fce.gif */,
+			);
+			path = pictureExample;
+			sourceTree = "<group>";
+		};
 		A117E7071DF51454006650C0 = {
 			isa = PBXGroup;
 			children = (
+				22F8004F1ED582510049D1BD /* pictureExample */,
 				A117E7121DF51454006650C0 /* AdaptiveCell */,
 				A117E7111DF51454006650C0 /* Products */,
 				F12CC284BE9B42E4BB29A333 /* Pods */,
@@ -150,7 +161,7 @@
 				TargetAttributes = {
 					A117E70F1DF51454006650C0 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -180,6 +191,7 @@
 				A117E7311DF533CE006650C0 /* ModelList.plist in Resources */,
 				A117E7261DF51454006650C0 /* LaunchScreen.storyboard in Resources */,
 				A117E7231DF51454006650C0 /* Assets.xcassets in Resources */,
+				22F800511ED582510049D1BD /* 3367014-255120f26d887fce.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +366,7 @@
 			baseConfigurationReference = 003573BC383BB7F176CD1289 /* Pods-AdaptiveCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AdaptiveCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HB.AdaptiveCell;
@@ -366,6 +379,7 @@
 			baseConfigurationReference = 87766A27F1FA4EB91E6F6C3F /* Pods-AdaptiveCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AdaptiveCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HB.AdaptiveCell;
