@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "BaseViewController.h"
-///
 @interface AppDelegate ()
 
 @end
